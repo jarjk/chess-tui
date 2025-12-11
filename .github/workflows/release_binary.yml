@@ -23,6 +23,7 @@ jobs:
 
       - uses: dtolnay/rust-toolchain@stable
         name: Install the Rust toolchain
+        # note: would require setting `targets` if `matrix.target` wasn't host-default
 
       - uses: Swatinem/rust-cache@v2
         name: Use cached dependencies and artifacts
